@@ -1,0 +1,125 @@
+:root {
+  --main-background: #f9f871;
+  --header-color: #ff9671;
+  --editor-color: #e7e78c;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* fonts classes*/
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* all images resetter */
+img {
+  max-width: 100%;
+}
+
+#container {
+  padding-block-start: 1rem;
+  min-height: 100vh;
+}
+/* Editor styling starts here */
+#textarea_container {
+  margin: auto;
+  width: 38rem;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  margin-block-end: 1rem;
+}
+
+.textarea-header {
+  background-color: var(--header-color);
+  height: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  position: relative;
+}
+/* left side of header */
+.header__left {
+  display: flex;
+  gap: 0.5rem;
+}
+/* left editor icon
+ */
+.header__left > i {
+  font-size: 1.3rem;
+}
+/* left "Editor" text */
+.header__left > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* header right */
+.header__right {
+  font-size: 1.3rem;
+  width: fit-content;
+}
+/* header right icon */
+.header__right > i {
+  transform: rotate(135deg);
+}
+/* text area */
+#editor {
+  background-color: var(--editor-color);
+  font-size: 1.1rem;
+  width: 100%;
+  height: calc(100% - 2.8rem);
+  border: none;
+  padding: 0.5rem;
+}
+/* editor styling ends here */
+
+/* preview styling starts here */
+#previewContainer {
+  width: 50rem;
+  margin: auto;
+  box-shadow: 0 0 10px black;
+  border: 1px solid black;
+  margin-block-end: 3rem;
+  background-color: var(--editor-color);
+}
+#preview {
+  background-color: var(--editor-color);
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  white-space: break-spaces;
+}
+
+/* this icon shows when you maximize Editor or Preview for minimiziang */
+.mini {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1.3rem;
+}
+.hide {
+  display: none;
+}
+
+/* preview styling ends here */
+
+/* hover effects starts here */
+.fa-solid:hover {
+  color: white;
+}
+/* hover effect ends here */
+
+.close {
+  display: none;
+}
