@@ -99,6 +99,7 @@ img {
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   white-space: break-spaces;
+  word-wrap: break-word;
 }
 
 /* this icon shows when you maximize Editor or Preview for minimiziang */
