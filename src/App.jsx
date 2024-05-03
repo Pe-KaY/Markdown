@@ -53,7 +53,7 @@ class App extends Component {
             </span>
             <span className="header__right">
               <img
-                src="https://github.com/Pe-KaY/Markdown/blob/75993caa77897081c9ca7649fb3442d98fad7b75/src/assets/down-left-and-up-right-to-center-solid.svg"
+                src="src/assets/down-left-and-up-right-to-center-solid.svg"
                 className={this.state.previewer ? "hide" : "mini"}
                 onClick={this.fullEditor}
               />
