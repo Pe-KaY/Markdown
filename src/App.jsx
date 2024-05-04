@@ -1,6 +1,7 @@
 import { Component } from "react"
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js"
 import "../src/styles/App.css"
+import imgClose from "./assets/down-left-and-up-right-to-center-solid.svg"
 
 class App extends Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class App extends Component {
             </span>
             <span className="header__right">
               <img
-                src="src/assets/down-left-and-up-right-to-center-solid.svg"
+                src={imgClose}
                 className={this.state.previewer ? "hide" : "mini"}
                 onClick={this.fullEditor}
               />
@@ -87,7 +88,7 @@ class App extends Component {
             </span>
             <span className="header__right">
               <img
-                src="src/assets/down-left-and-up-right-to-center-solid.svg"
+                src={imgClose}
                 className={this.state.editor ? "hide" : "mini"}
                 onClick={this.fullPreview}
               />
